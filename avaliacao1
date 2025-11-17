@@ -1,0 +1,152 @@
+import java.util.Scanner;
+public class SistemaEscolar {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        double[] notas = new double[8];
+        double[] mediasBimestrais = new double[4];
+        double[] mediasSemestrais = new double[2];
+        double mediaFinal;
+
+        System.out.println("=== Sistema Escolar ===");
+        System.out.println("Digite as 8 notas do aluno:");
+
+        // Entrada das notas
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Nota " + (i + 1) + ": ");
+            notas[i] = entrada.nextDouble();
+        }
+
+        // Cálculo das médias bimestrais (cada bimestre tem 2 notas)
+        for (int i = 0; i < 4; i++) {
+            mediasBimestrais[i] = (notas[i * 2] + notas[i * 2 + 1]) / 2;
+        }
+
+        // Cálculo das médias semestrais (cada semestre tem 2 bimestres)
+        mediasSemestrais[0] = (mediasBimestrais[0] + mediasBimestrais[1]) / 2;
+        mediasSemestrais[1] = (mediasBimestrais[2] + mediasBimestrais[3]) / 2;
+
+        // Cálculo da média final
+        mediaFinal = (mediasSemestrais[0] + mediasSemestrais[1]) / 2;
+
+        // Exibição dos resultados
+        System.out.println("\n=== Resultados ===");
+        for (int i = 0; i < 4; i++) {
+            System.out.printf("Média do %dº bimestre: %.2f%n", (i + 1), mediasBimestrais[i]);
+        }
+
+        System.out.printf("\nMédia do 1º semestre: %.2f%n", mediasSemestrais[0]);
+        System.out.printf("Média do 2º semestre: %.2f%n", mediasSemestrais[1]);
+        System.out.printf("\nMédia final do ano: %.2f%n", mediaFinal);
+
+        // Situação do aluno
+        if (mediaFinal >= 7) {
+            System.out.println("Situação: APROVADO ✅");
+        } else if (mediaFinal >= 5) {
+            System.out.println("Situação: RECUPERAÇÃO ⚠️");
+        } else {
+            System.out.println("Situação: REPROVADO ❌");
+        }
+
+        entrada.close();
+    }
+}
+import java.util.Scanner;
+public class ConversorTemperatura {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        double celsius, fahrenheit, kelvin;
+
+        System.out.println("=== Conversor de Temperatura ===");
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        celsius = entrada.nextDouble();
+
+        // Cálculos de conversão
+        fahrenheit = (celsius * 9 / 5) + 32;
+        kelvin = celsius + 273.15;
+
+        // Exibição dos resultados
+        System.out.println("\n=== Resultados ===");
+        System.out.printf("Temperatura em Celsius: %.2f °C%n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F%n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
+
+        entrada.close();
+    }
+}
+
+import java.util.Scanner;
+public class ConversorTemperatura {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        double celsius, fahrenheit, kelvin;
+
+        System.out.println("=== Conversor de Temperatura ===");
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        celsius = entrada.nextDouble();
+
+        // Cálculos de conversão
+        fahrenheit = (celsius * 9 / 5) + 32;
+        kelvin = celsius + 273.15;
+
+        // Exibição dos resultados
+        System.out.println("\n=== Resultados ===");
+        System.out.printf("Temperatura em Celsius: %.2f °C%n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F%n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
+
+        entrada.close();
+    }
+}
+import java.util.Scanner;
+public class ConversorTemperatura {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        double celsius, fahrenheit, kelvin;
+
+        System.out.println("=== Conversor de Temperatura ===");
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        celsius = entrada.nextDouble();
+
+        // Cálculos de conversão
+        fahrenheit = (celsius * 9 / 5) + 32;
+        kelvin = celsius + 273.15;
+
+        // Exibição dos resultados
+        System.out.priimport java.util.Scanner;
+public class ConversorTemperatura {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        double celsius, fahrenheit, kelvin;
+
+        System.out.println("=== Conversor de Temperatura ===");
+        System.out.print("Digite a temperatura em Celsius (°C): ");
+        celsius = entrada.nextDouble();
+
+        // Cálculos de conversão
+        fahrenheit = (celsius * 9 / 5) + 32;
+        kelvin = celsius + 273.15;
+
+        // Exibição dos resultados
+        System.out.println("\n=== Resultados ===");
+        System.out.printf("Temperatura em Celsius: %.2f °C%n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F%n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
+
+        entrada.close();
+    }
+}
+
+ntln("\n=== Resultados ===");
+        System.out.printf("Temperatura em Celsius: %.2f °C%n", celsius);
+        System.out.printf("Temperatura em Fahrenheit: %.2f °F%n", fahrenheit);
+        System.out.printf("Temperatura em Kelvin: %.2f K%n", kelvin);
+
+        entrada.close();
+    }
+}
+
